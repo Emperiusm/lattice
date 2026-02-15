@@ -1,0 +1,33 @@
+name: Architecture Decision Record
+description: Propose an architecture decision for discussion
+title: "adr: "
+labels: ["type:adr"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What is the issue or decision we need to make?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Decision
+      description: What do you recommend and why?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What other options were evaluated?
+    validations:
+      required: true
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences
+      description: What are the positive and negative consequences?
+    validations:
+      required: true

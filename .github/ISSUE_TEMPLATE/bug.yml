@@ -1,0 +1,38 @@
+name: Bug Report
+description: Report a bug for AI agent or human fix
+title: "fix(<scope>): "
+labels: ["type:bug", "ai:needs-spec"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: What happened vs what should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+    validations:
+      required: true
+  - type: textarea
+    id: fix_guidance
+    attributes:
+      label: Fix Guidance (for AI agents)
+      description: Root cause and suggested fix if known.
+    validations:
+      required: false
+  - type: dropdown
+    id: crate
+    attributes:
+      label: Affected Crate
+      options: [lattice-core, lattice-voice, lattice-moderation, lattice-mesh, lattice-mesh-ble, lattice-mesh-wifi, lattice-mesh-lora, lattice-dtn, lattice-homeserver, lattice-cli, Unknown]
+    validations:
+      required: true
