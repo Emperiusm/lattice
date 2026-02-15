@@ -1,0 +1,58 @@
+name: Feature Implementation
+description: Specify a feature for AI agent implementation
+title: "feat(<scope>): "
+labels: ["type:feature", "ai:needs-spec"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## AI-Ready Feature Specification
+        Fill this out completely. AI agents will use this spec to implement the feature.
+        Change the label to `ai:ready` when the spec is complete.
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why does this feature need to exist?
+    validations:
+      required: true
+  - type: textarea
+    id: specification
+    attributes:
+      label: Technical Specification
+      description: Detailed technical requirements. Be precise.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Checkboxes that must all be true.
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+    validations:
+      required: false
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+    validations:
+      required: false
+  - type: dropdown
+    id: crate
+    attributes:
+      label: Target Crate
+      options: [lattice-core, lattice-voice, lattice-moderation, lattice-mesh, lattice-mesh-ble, lattice-mesh-wifi, lattice-mesh-lora, lattice-dtn, lattice-homeserver, lattice-cli, Multiple crates]
+    validations:
+      required: true
+  - type: dropdown
+    id: size
+    attributes:
+      label: Estimated Size
+      options: ["XS (< 1 hour)", "S (1-4 hours)", "M (4-16 hours)", "L (16-40 hours)", "XL (40+ hours)"]
+    validations:
+      required: true
