@@ -1,0 +1,20 @@
+[package]
+name = "lattice-cli"
+description = "TUI client for Lattice - development and testing interface"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "lattice"
+path = "src/main.rs"
+
+[dependencies]
+lattice-core = { path = "../../crates/lattice-core" }
+lattice-mesh = { path = "../../crates/lattice-mesh" }
+tokio.workspace = true
+anyhow.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+ratatui.workspace = true
+crossterm.workspace = true

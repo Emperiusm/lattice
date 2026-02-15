@@ -1,0 +1,18 @@
+[package]
+name = "lattice-core"
+description = "Core library for Lattice - Matrix SDK wrapper and shared types"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+matrix-sdk.workspace = true
+tokio.workspace = true
+async-trait.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+tokio-test.workspace = true
